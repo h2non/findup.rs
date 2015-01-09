@@ -1,0 +1,5 @@
+[package]
+
+name = "findup"
+version = "0.1.0"
+authors = ["Tomas Aparicio <tomas@aparicio.me>"]
