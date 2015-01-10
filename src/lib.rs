@@ -8,7 +8,7 @@ extern crate glob;
 use std::os;
 use std::path;
 use glob::glob;
-use std::io::fs:: PathExtensions;
+use std::io::fs::PathExtensions;
 
 fn abs_path(path: &str) -> Path {
   os::getcwd().unwrap().join(&Path::new(path))
