@@ -36,3 +36,9 @@ fn find_glob_pattern_in_current_directory() {
   let file = findup("*.toml");
   assert_eq!(file.exists(), true);
 }
+
+#[test]
+fn cannot_find_file() {
+  let file = findup("*.toml");
+  assert_eq!(file.exists(), true);
+}
