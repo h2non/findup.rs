@@ -3,3 +3,11 @@
 name = "findup"
 version = "0.1.0"
 authors = ["Tomas Aparicio <tomas@aparicio.me>"]
+description = "Find the first file matching in a current working directory or the nearest ancestor directory up to root"
+homepage = "https://github.com/h2non/findup.rs"
+repository = "https://github.com/h2non/findup.rs.git"
+license = "MIT"
+
+[dependencies]
+
+glob = "*"
