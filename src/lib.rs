@@ -34,7 +34,7 @@ fn lookup(base: &str, pattern: &str) -> Path {
     return Path::new("");
   }
   
-  let mut buf: Vec<Path> = glob(pattern).collect();
+  let buf: Vec<Path> = glob(pattern).collect();
 
   if buf.is_empty() {
     return lookup("..", pattern);
