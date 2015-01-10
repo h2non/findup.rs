@@ -7,7 +7,7 @@ description = "Find the first file matching in a current working directory or th
 homepage = "https://github.com/h2non/findup.rs"
 repository = "https://github.com/h2non/findup.rs.git"
 license = "MIT"
-keywords = ["find", "discover", "lookup", "file", "glob", "search", "match"]
+keywords = ["find", "discover", "lookup", "file", "glob", "search"]
 
 [dependencies]
 
