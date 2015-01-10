@@ -37,9 +37,10 @@ fn find_glob_pattern_in_current_directory() {
   assert_eq!(file.exists(), true);
 }
 
-// to do: fix
+// to do: fix empty path
 #[test]
 fn cannot_find_file() {
   let file = findup("invalid");
   assert_eq!(file.exists(), true);
+  assert_eq!(file.as_str(), Some("."));
 }

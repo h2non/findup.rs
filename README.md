@@ -30,7 +30,12 @@ use findup::findup;
 fn main() {
   let file: Path = findup("my-file.*");
   assert_eq!(file.exists(), true);
-  println!("Path: {}", file.as_str().unwrap());
+  
+  if file.as_str() == Some(".") {
+    println!("File path: {}", file.display());
+  } else {
+    println!("File not found");
+  }
 }
 ```
 
