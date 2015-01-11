@@ -31,7 +31,7 @@ fn main() {
   let file: Path = findup("my-file.*");
   assert_eq!(file.exists(), true);
   
-  if file.as_str() == Some(".") {
+  if file.as_str().unwrap() == ~"." {
     println!("File path: {}", file.display());
   } else {
     println!("File not found");
