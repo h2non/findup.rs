@@ -1,6 +1,6 @@
 # findup.rs [![Build Status](https://api.travis-ci.org/h2non/findup.rs.svg?branch=master)][travis]
 
-A [Rust](http://rust-lang.org) tiny crate to find the first file matching in the current directory 
+A [Rust](http://rust-lang.org) small crate to find the first file matching in the current directory 
 or the nearest ancestor directory up to root with Glob patterns support. Inspired in node's [findup](https://npmjs.org/package/findup) and Go [findup](https://github.com/h2non/findup)
 
 **Note**: this is still a hacking-driven just-for-fun alpha package as 
