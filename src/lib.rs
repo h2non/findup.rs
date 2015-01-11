@@ -20,7 +20,7 @@ fn full_path(base: Path, path: &str) -> Path {
 
 fn base_path(partial: &str) -> Path {
   let cwd = os::getcwd().unwrap();
-  return match partial.len() {
+  match partial.len() {
     0 => cwd,
     _ => cwd.join(&Path::new(partial))
   }
